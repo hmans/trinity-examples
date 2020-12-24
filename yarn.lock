@@ -10294,10 +10294,10 @@ symbol-tree@^3.2.4:
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
-t5y@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/t5y/-/t5y-0.0.2.tgz#44e1e23a8479d373647ec2dbe8a0b089f497e366"
-  integrity sha512-oypwqOAzm2ZYd+/kM2Klww4fsGPnCh3+0t+LiQHGRtow4bzlhWsLiJ89Pu77B1NzFGCXQP8kAU96Tf7zF7m0lw==
+t5y@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/t5y/-/t5y-0.0.3.tgz#f3b47f65b679c3ffd45192f60ff90d46c0b15e47"
+  integrity sha512-cQPR2bCTyG2t/MpELMTDo86U+IXh3ktfpKjOiizyO39yZ7BZlEJsP8GeLvy7fihgqPWE+pCKou/TlyRWDozvWA==
 
 table@^5.2.3:
   version "5.4.6"
