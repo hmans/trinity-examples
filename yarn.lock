@@ -1196,6 +1196,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@hmans/trinity@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@hmans/trinity/-/trinity-0.0.4.tgz#225863dddf24bf2d27b9f433b3a060bf5babf35b"
+  integrity sha512-RmHrNkUXMNgCkYhGHNUj1qd+NZy8A2oBZBwzxZ357JmVV0HG+M+IanAfDl7YPvwJBMe9L71upsQDC/MLJ0R/8w==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -10293,11 +10298,6 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
-
-t5y@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/t5y/-/t5y-0.0.3.tgz#f3b47f65b679c3ffd45192f60ff90d46c0b15e47"
-  integrity sha512-cQPR2bCTyG2t/MpELMTDo86U+IXh3ktfpKjOiizyO39yZ7BZlEJsP8GeLvy7fihgqPWE+pCKou/TlyRWDozvWA==
 
 table@^5.2.3:
   version "5.4.6"
