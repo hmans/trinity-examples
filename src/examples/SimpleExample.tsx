@@ -1,5 +1,5 @@
 import T, { Engine, Scene, useCamera, useEngine, useOnUpdate } from "@hmans/trinity"
-import { useRef } from "react"
+import React, { useRef } from "react"
 import { BoxBufferGeometry, Mesh, PerspectiveCamera, Scene as ThreeScene } from "three"
 
 const Stuff = () => {
