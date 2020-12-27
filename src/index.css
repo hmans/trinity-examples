@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
 body,
 html {
   margin: 0;
@@ -24,6 +25,10 @@ a {
 }
 
 pre {
-  font: 13px/1.3 "Lucida Console", Consolas, Menlo, monospace;
   background: none !important;
+}
+
+code {
+  font: 13px/1.3 "Fira Code", "Source Code Pro", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
 }
