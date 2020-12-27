@@ -18,9 +18,11 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
 
   useEffect(() => {
     fetch(rawSourceUrl(path)).then((response) => {
-      response.text().then((text) => setSource(text))
+      response.text().then((text) => {
+        setSource(text)
+      })
     })
-  })
+  }, [path])
 
   return (
     <div className={styles.SourceCode}>
