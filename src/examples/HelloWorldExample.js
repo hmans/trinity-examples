@@ -1,9 +1,12 @@
+/**
+ * A very, very simple example of a Trinity-powered application.
+ */
+
 import T, { Engine, Scene, useCamera, useEngine, useOnUpdate } from "@hmans/trinity"
 import React, { useRef } from "react"
-import { Mesh, PerspectiveCamera, Scene as ThreeScene } from "three"
 
 const Camera = () => {
-  const cameraRef = useRef<PerspectiveCamera>(null)
+  const cameraRef = useRef()
 
   useCamera(cameraRef, (c) => c.lookAt(0, 0, 0))
 
@@ -11,12 +14,12 @@ const Camera = () => {
 }
 
 const SimpleRotatingCube = () => {
-  const meshRef = useRef<Mesh>(null)
+  const meshRef = useRef()
 
   const { triggerFrame } = useEngine()
 
   useOnUpdate((dt) => {
-    meshRef.current!.rotation.x = meshRef.current!.rotation.y += dt
+    meshRef.current.rotation.x = meshRef.current.rotation.y += dt
     triggerFrame()
   })
 
@@ -31,7 +34,7 @@ const SimpleRotatingCube = () => {
 }
 
 export const HelloWorldExample = () => {
-  const sceneRef = useRef<ThreeScene>(null)
+  const sceneRef = useRef()
 
   return (
     <Engine>
