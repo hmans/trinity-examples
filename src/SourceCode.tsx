@@ -42,8 +42,18 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
   return (
     <div className={styles.SourceCode}>
       <p>
-        <GithubLink path={path}>GitHub</GithubLink> &middot;{" "}
-        <CodesandboxLink path={path}>Codesandbox</CodesandboxLink>
+        <GithubLink path={path}>
+          <img
+            alt="Github"
+            src="https://img.shields.io/static/v1.png?style=flat&label=code&message=github&color=333333"
+          />
+        </GithubLink>{" "}
+        <CodesandboxLink path={path}>
+          <img
+            alt="Codesandbox"
+            src="https://img.shields.io/static/v1.png?style=flat&label=code&message=codesandbox&color=333366"
+          />
+        </CodesandboxLink>
       </p>
       {source && (
         <SyntaxHighlighter language="typescript" style={style}>
