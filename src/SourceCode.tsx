@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react"
-import SyntaxHighlighter from "react-syntax-highlighter"
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
-
+import { Light as SyntaxHighlighter } from "react-syntax-highlighter"
+import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript"
+import docco from "react-syntax-highlighter/dist/esm/styles/hljs/docco"
 import styles from "./SourceCode.module.css"
+
+SyntaxHighlighter.registerLanguage("typescript", ts)
 
 const fullSourceUrl = (path: string) =>
   `https://github.com/hmans/trinity-examples/tree/master/src/${path}`
