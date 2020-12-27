@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter"
 import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript"
-import docco from "react-syntax-highlighter/dist/esm/styles/hljs/docco"
+import style from "react-syntax-highlighter/dist/esm/styles/hljs/github"
 import styles from "./SourceCode.module.css"
 
 SyntaxHighlighter.registerLanguage("typescript", ts)
@@ -31,11 +31,8 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
 
   return (
     <div className={styles.SourceCode}>
-      <p>
-        <SourceCodeLink path={path}>Open on GitHub</SourceCodeLink>
-      </p>
       {source && (
-        <SyntaxHighlighter language="typescript" style={docco}>
+        <SyntaxHighlighter language="typescript" style={style}>
           {source}
         </SyntaxHighlighter>
       )}
