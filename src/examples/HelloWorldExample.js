@@ -57,6 +57,9 @@ const SimpleRotatingCube = () => {
   callbacks. The most common is `useOnUpdate`, which registers a function that will
   be executed on every engine tick. */
   useOnUpdate((dt) => {
+    /* The update callbacks receive the current deltatime (the fraction of a second since
+    the last tick) as their first and only argument. We can use this to smooth out
+    animations and make them framerate independent. */
     ref.current.rotation.x = ref.current.rotation.y += dt
 
     /* Unlike other frameworks, Trinity will never automatically render a frame

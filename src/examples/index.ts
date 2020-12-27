@@ -10,7 +10,7 @@ export const examples: ExampleCategory[] = [
   },
   {
     name: "Loading Assets",
-    examples: [["/gltf", "GLTF Loading", GLTFExample, "examples/GLTFExample.tsx"]]
+    examples: [["/gltf", "GLTF Loading", GLTFExample, "examples/GLTFExample.js"]]
   }
 ]
 

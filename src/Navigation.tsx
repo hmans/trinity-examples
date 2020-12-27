@@ -5,15 +5,15 @@ import styles from "./Navigation.module.css"
 
 export const Navigation = () => (
   <div className={styles.Navigation}>
-    {examples.map((category) => (
-      <>
+    {examples.map((category, i) => (
+      <div key={i}>
         <h3>{category.name}</h3>
         {category.examples.map(([path, name, _]) => (
           <Link key={path} to={path}>
             {name}
           </Link>
         ))}
-      </>
+      </div>
     ))}
   </div>
 )

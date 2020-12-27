@@ -8,15 +8,17 @@
 
   background-color: transparent;
   box-shadow: none;
+  opacity: 0.2;
 
   overflow: scroll;
 
-  transition: background-color 0.3s, box-shadow 0.3s, right 0.2s;
+  transition: opacity 0.1s, background-color 0.3s, box-shadow 0.3s, right 0.2s;
   transition-delay: 0.5s;
 }
 
 .SourceCode:hover {
   right: 0px;
+  opacity: 1;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: rgba(0, 0, 0, 0.1) -10px 0px 20px;
   transition-delay: 0s;
@@ -24,13 +26,4 @@
 
 .SourceCode > *:first-child {
   margin-top: 0;
-}
-
-.SourceCode > pre {
-  opacity: 0.2;
-  transition: opacity 0.3s;
-}
-
-.SourceCode:hover > pre {
-  opacity: 1;
 }
