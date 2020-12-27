@@ -14,6 +14,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scripts": "4.0.1",
+    "react-syntax-highlighter": "^15.4.3",
     "three": "0.124.0",
     "typescript": "4.1.3",
     "web-vitals": "1.0.1",
@@ -44,5 +45,8 @@
     ]
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/react-syntax-highlighter": "^13.5.0"
+  }
 }

@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react"
+import SyntaxHighlighter from "react-syntax-highlighter"
+import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs"
+
 import styles from "./SourceCode.module.css"
 
 const fullSourceUrl = (path: string) =>
@@ -26,8 +29,11 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
 
   return (
     <div className={styles.SourceCode}>
-      <SourceCodeLink path={path}>Source Code</SourceCodeLink>
-      {source && <pre>{source}</pre>}
+      {source && (
+        <SyntaxHighlighter language="typescript" style={docco}>
+          {source}
+        </SyntaxHighlighter>
+      )}
     </div>
   )
 }

@@ -22,3 +22,7 @@ code {
 a {
   color: inherit;
 }
+
+pre > code {
+  font: 11px "Lucida Console", Consolas, Menlo, monospace;
+}

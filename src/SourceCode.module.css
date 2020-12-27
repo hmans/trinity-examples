@@ -9,6 +9,10 @@
   padding: 0.5em;
 }
 
+.SourceCode > *:first-child {
+  margin-top: 0;
+}
+
 .SourceCode a {
   display: block;
 }
