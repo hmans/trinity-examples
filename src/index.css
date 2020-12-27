@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap");
+
+* {
+  box-sizing: inherit;
+}
+
 body,
 html {
   margin: 0;
@@ -6,6 +11,8 @@ html {
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
 }
 
 body {

@@ -1,0 +1,10 @@
+.Description {
+  position: fixed;
+  bottom: 20px;
+  left: 270px;
+  width: 50%;
+
+  font-size: 200%;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
