@@ -9,19 +9,26 @@
   background-color: transparent;
 
   overflow: scroll;
-  opacity: 0.2;
 
-  transition: opacity 0.3s, background-color 0.3s, right 0.2s;
+  transition: background-color 0.3s, right 0.2s;
   transition-delay: 0.5s;
 }
 
 .SourceCode:hover {
   right: 0px;
-  opacity: 1;
   background-color: rgba(255, 255, 255, 0.9);
   transition-delay: 0s;
 }
 
 .SourceCode > *:first-child {
   margin-top: 0;
+}
+
+.SourceCode > pre {
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+
+.SourceCode:hover > pre {
+  opacity: 1;
 }
