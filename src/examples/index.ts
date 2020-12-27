@@ -1,9 +1,9 @@
 import { GLTFExample } from "./GLTFExample"
-import { SimpleExample } from "./SimpleExample"
+import { HelloWorldExample } from "./HelloWorldExample"
 
 export type Example = [string, string, Function, string]
 
 export const examples: Example[] = [
-  ["/simple", "Simple Example", SimpleExample, "examples/SimpleExample.tsx"],
+  ["/hello-world", "Hello World", HelloWorldExample, "examples/HelloWorldExample.tsx"],
   ["/gltf", "GLTF Loading", GLTFExample, "examples/GLTFExample.tsx"]
 ]
