@@ -11,12 +11,14 @@ function App() {
       <Switch>
         <Route path="/">{null}</Route>
         <>
-          {examples.map(([path, _, ExampleComponent, sourcePath]) => (
-            <Route key={path} path={path}>
-              <SourceCode path={sourcePath} />
-              <ExampleComponent />
-            </Route>
-          ))}
+          {examples.map((category) =>
+            category.examples.map(([path, _, ExampleComponent, sourcePath]) => (
+              <Route key={path} path={path}>
+                <SourceCode path={sourcePath} />
+                <ExampleComponent />
+              </Route>
+            ))
+          )}
         </>
         <Route>
           <p>Not found</p>

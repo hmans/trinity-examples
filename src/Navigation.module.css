@@ -12,3 +12,7 @@
 .Navigation a {
   display: block;
 }
+
+.Navigation > *:first-child {
+  margin-top: 0;
+}
