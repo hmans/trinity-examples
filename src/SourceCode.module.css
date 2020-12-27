@@ -1,8 +1,8 @@
 .SourceCode {
   position: fixed;
-  width: 70%;
+  width: 70em;
   height: 100vh;
-  right: -60%;
+  right: -55em;
   top: 0;
   padding: 2em;
 
