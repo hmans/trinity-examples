@@ -12,11 +12,11 @@ const fullSourceUrl = (path: string) =>
 const rawSourceUrl = (path: string) =>
   `https://raw.githubusercontent.com/hmans/trinity-examples/master/src/${path}`
 
-const SourceCodeLink: React.FC<{ path: string }> = ({ path, children }) => (
-  <a href={fullSourceUrl(path)} target="_blank" rel="noreferrer">
-    {children}
-  </a>
-)
+// const SourceCodeLink: React.FC<{ path: string }> = ({ path, children }) => (
+//   <a href={fullSourceUrl(path)} target="_blank" rel="noreferrer">
+//     {children}
+//   </a>
+// )
 
 export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
   const [source, setSource] = useState<string>()
