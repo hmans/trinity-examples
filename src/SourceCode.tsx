@@ -31,6 +31,9 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
 
   return (
     <div className={styles.SourceCode}>
+      <p>
+        <SourceCodeLink path={path}>Open on GitHub</SourceCodeLink>
+      </p>
       {source && (
         <SyntaxHighlighter language="typescript" style={style}>
           {source}
