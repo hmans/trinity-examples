@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react"
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter"
-import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript"
+import SyntaxHighlighter from "react-syntax-highlighter"
+// import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript"
 import style from "react-syntax-highlighter/dist/esm/styles/hljs/github"
 import styles from "./SourceCode.module.css"
-
-SyntaxHighlighter.registerLanguage("typescript", ts)
 
 const GithubLink: React.FC<{ path: string }> = ({ path, children }) => (
   <a
