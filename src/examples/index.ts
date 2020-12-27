@@ -1,5 +1,5 @@
-import { GLTFExample } from "./examples/GLTFExample"
-import { SimpleExample } from "./examples/SimpleExample"
+import { GLTFExample } from "./GLTFExample"
+import { SimpleExample } from "./SimpleExample"
 
 export type Example = [string, string, Function, string]
 

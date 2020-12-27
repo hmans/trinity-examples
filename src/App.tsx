@@ -1,7 +1,6 @@
 import React from "react"
 import { Route, Switch } from "wouter"
 import { examples } from "./examples"
-import { SimpleExample } from "./examples/SimpleExample"
 import { Navigation } from "./Navigation"
 import { SourceCode } from "./SourceCode"
 
@@ -10,9 +9,7 @@ function App() {
     <>
       <Navigation />
       <Switch>
-        <Route path="/">
-          <SimpleExample />
-        </Route>
+        <Route path="/">{null}</Route>
         <>
           {examples.map(([path, _, ExampleComponent, sourcePath]) => (
             <Route key={path} path={path}>
