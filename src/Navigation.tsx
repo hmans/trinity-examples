@@ -14,7 +14,7 @@ export const Navigation = () => (
     </p>
 
     {examples.map((category, i) => (
-      <div key={i} className="category">
+      <div key={i} className={styles.category}>
         <h3>{category.name}</h3>
         {category.examples.map(([path, name, _]) => (
           <Link key={path} to={path}>
