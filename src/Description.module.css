@@ -1,10 +1,14 @@
 .Description {
   position: fixed;
-  bottom: 20px;
-  left: 270px;
+  top: 25px;
+  left: 280px;
   width: 50%;
 
-  font-size: 200%;
+  font-size: 175%;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Description strong {
+  color: black;
 }

@@ -47,7 +47,7 @@ const LoadingPlaceholder = () => (
 
 export const GLTFExample = () => (
   <Engine>
-    <Scene backgroundColor="#333">
+    <Scene backgroundColor="#667">
       <T.AmbientLight intensity={0.3} />
       <T.DirectionalLight intensity={0.8} position={[10, 10, 3]} />
       <Camera />
