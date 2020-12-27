@@ -8,7 +8,7 @@ import React, { useRef } from "react"
 const Camera = () => {
   const cameraRef = useRef()
 
-  useCamera(cameraRef, (c) => c.lookAt(0, 0, 0))
+  useCamera(cameraRef)
 
   return <T.PerspectiveCamera ref={cameraRef} position={[0, 0, 5]} />
 }
