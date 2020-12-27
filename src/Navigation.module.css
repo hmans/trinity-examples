@@ -13,6 +13,10 @@
   display: block;
 }
 
-.Navigation > *:first-child {
+.Navigation > div {
+  margin-bottom: 2em;
+}
+
+.Navigation > div > *:first-child {
   margin-top: 0;
 }
