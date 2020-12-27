@@ -1,22 +1,26 @@
 .Navigation {
   position: fixed;
-  width: 160px;
+  width: 180px;
   height: 100vh;
   left: 0;
   top: 0;
 
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2em;
 }
 
-.Navigation a {
+.Navigation > *:first-child {
+  margin-top: 0;
+}
+
+.Navigation > div.category > a {
   display: block;
 }
 
-.Navigation > div {
+.Navigation > div.category {
   margin-bottom: 2em;
 }
 
-.Navigation > div > *:first-child {
+.Navigation > div.category > *:first-child {
   margin-top: 0;
 }
