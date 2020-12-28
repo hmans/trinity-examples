@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react"
 import SyntaxHighlighter from "react-syntax-highlighter"
-// import ts from "react-syntax-highlighter/dist/esm/languages/hljs/typescript"
 import style from "react-syntax-highlighter/dist/esm/styles/hljs/paraiso-light"
-import styles from "./SourceCode.module.css"
 
 const GithubLink: React.FC<{ path: string }> = ({ path, children }) => (
   <a
@@ -38,7 +36,7 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
   }, [path])
 
   return (
-    <div className={styles.SourceCode}>
+    <div className="SourceCode">
       <p>
         <GithubLink path={path}>
           <img

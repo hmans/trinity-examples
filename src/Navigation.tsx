@@ -1,10 +1,9 @@
 import React from "react"
 import { Link } from "wouter"
 import { examples } from "./examples"
-import styles from "./Navigation.module.css"
 
 export const Navigation = () => (
-  <div className={styles.Navigation}>
+  <div className="Navigation">
     <p>
       A collection of examples for (and experiments with) the{" "}
       <a href="https://github.com/hmans/trinity" target="_blank" rel="noreferrer">
@@ -14,7 +13,7 @@ export const Navigation = () => (
     </p>
 
     {examples.map((category, i) => (
-      <div key={i} className={styles.category}>
+      <div key={i} className="category">
         <h3>{category.name}</h3>
         {category.examples.map(([path, name]) => (
           <Link key={path} to={path}>
