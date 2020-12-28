@@ -52,12 +52,14 @@ h6 {
 }
 
 /* Helper class that eradicates the immediate children's margins */
-.remove-inner-margins > *:first-child {
+%remove-inner-margins > *:first-child {
   margin-top: 0;
 }
-.remove-inner-margins > *:last-child {
+%remove-inner-margins > *:last-child {
   margin-bottom: 0;
 }
+
+/* <Description> */
 
 .Description {
   position: fixed;
@@ -68,13 +70,16 @@ h6 {
   font-size: 175%;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.5);
+
+  strong {
+    color: black;
+  }
 }
 
-.Description strong {
-  color: black;
-}
+/* <Navigation> */
 
 .Navigation {
+  @extend %remove-inner-margins;
   position: fixed;
   width: 250px;
   height: 100vh;
@@ -85,23 +90,20 @@ h6 {
   padding: 2em;
 }
 
-.Navigation > *:first-child {
-  margin-top: 0;
-}
-
-.Navigation > div.category a {
-  display: block;
-}
-
 .Navigation > div.category {
+  @extend %remove-inner-margins;
   margin: 2em 0;
+
+  a {
+    display: block;
+  }
 }
 
-.Navigation > div.category > *:first-child {
-  margin-top: 0;
-}
+/* <SourceCode> */
 
 .SourceCode {
+  @extend %remove-inner-margins;
+
   position: fixed;
   width: 70em;
   height: 100vh;
@@ -117,16 +119,12 @@ h6 {
 
   transition: opacity 0.1s, background-color 0.3s, box-shadow 0.3s, right 0.2s;
   transition-delay: 0.5s;
-}
 
-.SourceCode:hover {
-  right: 0px;
-  opacity: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: rgba(0, 0, 0, 0.1) -10px 0px 20px;
-  transition-delay: 0s;
-}
-
-.SourceCode > *:first-child {
-  margin-top: 0;
+  &:hover {
+    right: 0px;
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.1) -10px 0px 20px;
+    transition-delay: 0s;
+  }
 }
