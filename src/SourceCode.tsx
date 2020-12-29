@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
-import SyntaxHighlighter from "react-syntax-highlighter"
-import style from "react-syntax-highlighter/dist/esm/styles/hljs/paraiso-light"
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 
 const GithubLink: React.FC<{ path: string }> = ({ path, children }) => (
   <a
@@ -51,11 +50,7 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
           />
         </CodesandboxLink>
       </p>
-      {source && (
-        <SyntaxHighlighter language="typescript" style={style}>
-          {source}
-        </SyntaxHighlighter>
-      )}
+      {source && <SyntaxHighlighter language="typescript">{source}</SyntaxHighlighter>}
     </div>
   )
 }
