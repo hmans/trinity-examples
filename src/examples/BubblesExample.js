@@ -1,3 +1,8 @@
+/*
+This is a fork of the classic react-three-fiber demo:
+https://codesandbox.io/embed/r3f-gamma-correction-kmb9i
+*/
+
 import Trinity, { Engine, Scene, useCamera } from "@hmans/trinity"
 import { useEngine, useOnUpdate } from "@hmans/trinity/engine/hooks"
 import React, { useMemo, useRef } from "react"
