@@ -1196,10 +1196,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hmans/trinity@0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@hmans/trinity/-/trinity-0.0.8.tgz#7f90d27a045ba839db744e20816323ad0b380c45"
-  integrity sha512-TdJEJxmKhucsIwWjw9OKnGtz+3VdeNh7s4o4f3Cyd98Pmh753MdxzctMhCTHKWb95AiQNYKOQDeVfcwGYf3JlQ==
+"@hmans/trinity@0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@hmans/trinity/-/trinity-0.0.10.tgz#b4d1cf9d9f71a4d76934e73d159cf8ba0a9fcdfe"
+  integrity sha512-CTyqzGEtLaaxQCAf1eP8eipznTXbDImCglneTKGIH2bTWOM+d47Tl7Z0dcimm56moq6fP4qVf6Gwkb8M9h9+jg==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"

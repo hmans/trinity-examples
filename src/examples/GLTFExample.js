@@ -1,12 +1,5 @@
-import T, {
-  Engine,
-  Primitive,
-  Scene,
-  useCamera,
-  useEngine,
-  useGLTF,
-  useOnUpdate
-} from "@hmans/trinity"
+import T, { Engine, Primitive, Scene, useCamera, useEngine, useOnUpdate } from "@hmans/trinity"
+import { useGLTF } from "@hmans/trinity/loaders"
 import React, { Suspense, useRef } from "react"
 
 const Camera = () => {
