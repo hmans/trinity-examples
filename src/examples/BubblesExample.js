@@ -1,5 +1,5 @@
 /*
-This is a fork of the classic react-three-fiber demo:
+This is a port of the classic react-three-fiber demo:
 https://codesandbox.io/embed/r3f-gamma-correction-kmb9i
 */
 
