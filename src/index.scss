@@ -137,6 +137,12 @@ h6 {
   transition: opacity 0.1s, background-color 0.3s, box-shadow 0.3s, right 0.2s;
   transition-delay: 0.5s;
 
+  /* Prism hacks */
+  * {
+    background: transparent !important;
+    text-shadow: none !important;
+  }
+
   &:hover {
     right: 0px;
     opacity: 1;
