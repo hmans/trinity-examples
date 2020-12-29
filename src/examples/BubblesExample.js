@@ -11,24 +11,30 @@ function Swarm({ count }) {
 
   const particles = useMemo(() => {
     const temp = []
-    for (let i = 0; i < count; i++) {
-      const t = Math.random() * 100
-      const factor = 20 + Math.random() * 100
-      const speed = 0.01 + Math.random() * 2
-      const xFactor = -20 + Math.random() * 40
-      const yFactor = -20 + Math.random() * 40
-      const zFactor = -20 + Math.random() * 40
-      temp.push({ t, factor, speed, xFactor, yFactor, zFactor, mx: 0, my: 0 })
-    }
+
+    for (let i = 0; i < count; i++)
+      temp.push({
+        t: Math.random() * 100,
+        factor: 20 + Math.random() * 100,
+        speed: 0.01 + Math.random() * 2,
+        xFactor: -20 + Math.random() * 40,
+        yFactor: -20 + Math.random() * 40,
+        zFactor: -20 + Math.random() * 40,
+        mx: 0,
+        my: 0
+      })
+
     return temp
   }, [count])
 
   useOnUpdate((dt) => {
     particles.forEach((particle, i) => {
       let { t, factor, speed, xFactor, yFactor, zFactor } = particle
+
       t = particle.t += (dt * speed) / 2
-      const a = Math.cos(t) + Math.sin(t * 1) / 10
-      const b = Math.sin(t) + Math.cos(t * 2) / 10
+
+      const a = Math.cos(t) + Math.sin(t) * 0.1
+      const b = Math.sin(t) + Math.cos(t * 2) * 0.1
       const s = Math.max(1.5, Math.cos(t) * 5)
 
       dummy.position.set(
@@ -45,6 +51,7 @@ function Swarm({ count }) {
           Math.cos((t / 10) * factor) +
           (Math.sin(t * 3) * factor) / 10
       )
+
       dummy.scale.setScalar(s)
       dummy.updateMatrix()
 
