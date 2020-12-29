@@ -29,13 +29,13 @@ export const SourceCode: React.FC<{ path: string }> = ({ path }) => {
   const [source, setSource] = useState<string>()
 
   useEffect(() => {
-    fetch(
-      `https://raw.githubusercontent.com/hmans/trinity-examples/master/src/${path}?foo=123`
-    ).then((response) => {
-      response.text().then((text) => {
-        setSource(text)
-      })
-    })
+    fetch(`https://raw.githubusercontent.com/hmans/trinity-examples/master/src/${path}`).then(
+      (response) => {
+        response.text().then((text) => {
+          setSource(text)
+        })
+      }
+    )
   }, [path])
 
   return (
