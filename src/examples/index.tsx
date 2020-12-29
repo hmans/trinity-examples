@@ -2,6 +2,7 @@ import { ExplicitRenderingExample } from "./ExplicitRenderingExample"
 import { GLTFExample } from "./GLTFExample"
 import { HelloWorldExample } from "./HelloWorldExample"
 import React from "react"
+import { BubblesExmaple } from "./BubblesExample"
 
 export type Example = [string, string, string | React.ReactElement, Function, string]
 
@@ -39,6 +40,18 @@ export const examples: ExampleCategory[] = [
         "A spaceship model loaded from a GLTF file.",
         GLTFExample,
         "examples/GLTFExample.js"
+      ]
+    ]
+  },
+  {
+    name: "Experiments",
+    examples: [
+      [
+        "/bubbles",
+        "Bubbles",
+        "A swarm of bubbles implemented via InstancedMesh.",
+        BubblesExmaple,
+        "examples/BubblesExample.js"
       ]
     ]
   }
