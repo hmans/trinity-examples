@@ -1,11 +1,18 @@
-import T, { Engine, Primitive, Scene, useCamera, useEngine, useOnUpdate } from "@hmans/trinity"
+import Trinity, {
+  Engine,
+  Primitive,
+  Scene,
+  useCamera,
+  useEngine,
+  useOnUpdate
+} from "@hmans/trinity"
 import { useGLTF } from "@hmans/trinity/loaders"
 import React, { Suspense, useRef } from "react"
 
 const Camera = () => {
   const cameraRef = useRef()
   useCamera(cameraRef)
-  return <T.PerspectiveCamera ref={cameraRef} position={[0, 0, 35]} />
+  return <Trinity.PerspectiveCamera ref={cameraRef} position={[0, 0, 35]} />
 }
 
 const Spaceship = () => {
@@ -32,17 +39,17 @@ const Spaceship = () => {
  * file is still being loaded.
  */
 const LoadingPlaceholder = () => (
-  <T.Mesh>
-    <T.DodecahedronBufferGeometry />
-    <T.MeshStandardMaterial color="hotpink" />
-  </T.Mesh>
+  <Trinity.Mesh>
+    <Trinity.DodecahedronBufferGeometry />
+    <Trinity.MeshStandardMaterial color="hotpink" />
+  </Trinity.Mesh>
 )
 
 export const GLTFExample = () => (
   <Engine>
     <Scene backgroundColor="#667">
-      <T.AmbientLight intensity={0.3} />
-      <T.DirectionalLight intensity={0.8} position={[10, 10, 3]} />
+      <Trinity.AmbientLight intensity={0.3} />
+      <Trinity.DirectionalLight intensity={0.8} position={[10, 10, 3]} />
       <Camera />
 
       {/* Note how we're wrapping the spaceship in a <Suspense> component. */}
